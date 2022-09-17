@@ -1,6 +1,6 @@
 {
   "name": "js-ts-utilities",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JavaScript / TypeScript Utilities",
   "author": "Punit Soni <punit.soni33@gmail.com> (https://punit-soni.web.app)",
   "license": "MIT",
@@ -17,6 +17,17 @@
   "files": [
     "dist",
     "src"
+  ],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "utilities",
+    "helpers",
+    "functions",
+    "javascript utilities",
+    "typescript utilities",
+    "javascript helper functions",
+    "typescript helper functions"
   ],
   "engines": {
     "node": ">=10"
