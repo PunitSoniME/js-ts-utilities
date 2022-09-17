@@ -26,26 +26,34 @@ npm install --save js-ts-utilities
 
 ## Usage
 
-### Each loader has their own default properties. You can overwrite the defaults by passing props into the loaders.
 
-<br />
+<details>
+<summary style="font-size: 1.2rem; font-weight: bold">URL Utilities</summary>
 
-## Demo of all spinners - https://js-ts-utilities.netlify.app/
+```
+import { getBaseURL, isAbsoluteURL, getURLParameters, containsElement } from 'js-ts-utilities';
 
-<br />
+const getBaseURLResult = getBaseURL('https://url.com/page?name=Punit&surname=Soni');
+console.log("getBaseURL ", getBaseURLResult);   //  https://url.com/page
 
-### Rounded Spinners - [`Demo`](https://codesandbox.io/s/rounded-spinners-ctkq3w) - [`Usage`](./src/Spinners/Rounded/README.md)
 
-### Classic Spinners - [`Demo`](https://codesandbox.io/s/classic-spinners-jg8qb0) - [`Usage`](./src/Spinners/Classic/README.md) 
+const isAbsoluteURLResult = isAbsoluteURL('https://google.com');
+console.log("isAbsoluteURL ", isAbsoluteURLResult);   //  true
 
-### Infinity Spinners - [`Demo`](https://codesandbox.io/s/infinity-spinners-qq6ij6) - [`Usage`](./src/Spinners/Infinity/README.md) 
 
-### Dot Spinners - [`Demo`](https://codesandbox.io/s/dot-spinners-ronmuc) - [`Usage`](./src/Spinners/Dot/README.md) 
+const getURLParametersResult = getURLParameters('https://url.com/page?name=Punit&surname=Soni');
+console.log("getURLParameters ", getURLParametersResult);    //  { name: 'Punit', surname: 'Soni' }
 
-### Bar Spinners - [`Demo`](https://codesandbox.io/s/bajs-ts-utilities-z3b8u9) - [`Usage`](./src/Spinners/Bar/README.md) 
 
-### Continuous Spinners - [`Demo`](https://codesandbox.io/s/continuous-spinners-cvziqr) - [`Usage`](./src/Spinners/Continuous/README.md) 
+const containsElementResult = containsElement(
+    document.querySelector('head'),
+    document.querySelector('title')
+);
+console.log("containsElement ", containsElementResult);    //  true
 
-### Progress Spinners - [`Demo`](https://codesandbox.io/s/progress-spinners-btq55g) - [`Usage`](./src/Spinners/Progress/README.md) 
+```
+</details>
 
-### Wobbling Spinners - [`Demo`](https://codesandbox.io/s/wobbling-spinners-yfqkp2) - [`Usage`](./src/Spinners/Wobbling/README.md) 
+
+
+

@@ -1,8 +1,8 @@
 {
   "name": "js-ts-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript / TypeScript Utilities",
-  "author": "Punit Soni <punit.soni33@gmail.com> (http://punit-soni.web.app)",
+  "author": "Punit Soni <punit.soni33@gmail.com> (https://punit-soni.web.app)",
   "license": "MIT",
   "repository": {
     "type": "git",

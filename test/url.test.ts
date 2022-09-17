@@ -2,7 +2,7 @@ import { getBaseURL, isAbsoluteURL, getURLParameters } from '../src/url';
 
 describe('url', () => {
     it('getBaseURL', () => {
-        expect(getBaseURL('https://url.com/page?name=Adam&surname=Smith')).toEqual("https://url.com/page");
+        expect(getBaseURL('https://url.com/page?name=Punit&surname=Soni')).toEqual("https://url.com/page");
     });
 
     it('isAbsoluteURL', () => {
@@ -10,7 +10,7 @@ describe('url', () => {
     });
 
     it('getURLParameters', () => {
-        expect(getURLParameters('http://url.com/page?name=Adam&surname=Smith')).toEqual({ name: 'Adam', surname: 'Smith' });
+        expect(getURLParameters('https://url.com/page?name=Punit&surname=Soni')).toEqual({ name: 'Punit', surname: 'Soni' });
     });
 
 });
