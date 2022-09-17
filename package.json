@@ -1,0 +1,63 @@
+{
+  "name": "js-ts-utilities",
+  "version": "1.0.0",
+  "description": "JavaScript / TypeScript Utilities",
+  "author": "Punit Soni <punit.soni33@gmail.com> (http://punit-soni.web.app)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PunitSoniME/js-ts-utilities.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PunitSoniME/js-ts-utilities/issues"
+  },
+  "main": "dist/index.js",
+  "module": "dist/js-ts-utilities.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "size-limit": [
+    {
+      "path": "dist/js-ts-utilities.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/js-ts-utilities.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.1.0",
+    "husky": "^8.0.1",
+    "size-limit": "^8.1.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3"
+  }
+}
