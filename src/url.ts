@@ -10,5 +10,3 @@ export const getURLParameters = (url: string) =>
         {}
     );
 
-export const containsElement = (parent: any, child: any) =>
-    parent !== child && parent.contains(child);

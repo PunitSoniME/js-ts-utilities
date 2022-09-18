@@ -10,6 +10,8 @@
 
 [npm_url]: https://www.npmjs.org/package/js-ts-utilities
 
+----------------------------------------
+
 ## Installation
 
 With Yarn:
@@ -24,35 +26,69 @@ With npm:
 npm install --save js-ts-utilities
 ```
 
-## Usage
+<br />
 
+----------------------------------------
 
-<details>
-<summary style="font-size: 1.2rem; font-weight: bold">URL Utilities</summary>
+<span style="font-size: 1.5rem; font-weight: bold">URL Utilities</span>
 
+```js
+import { getBaseURL, isAbsoluteURL, getURLParameters } from 'js-ts-utilities';
 ```
-import { getBaseURL, isAbsoluteURL, getURLParameters, containsElement } from 'js-ts-utilities';
 
-const getBaseURLResult = getBaseURL('https://url.com/page?name=Punit&surname=Soni');
-console.log("getBaseURL ", getBaseURLResult);   //  https://url.com/page
+| Method | Example | Output |
+| ----- | ----- | ----- |
+| ```getBaseURL``` | ```getBaseURL('https://url.com/page?name=Punit&surname=Soni');``` | ```https://url.com/page``` |
+| ```isAbsoluteURL``` | ```isAbsoluteURL('https://google.com');``` | ```true``` |
+| ```getURLParameters``` | ```getURLParameters('https://url.com/page?name=Punit&surname=Soni');``` | ```{ name: 'Punit', surname: 'Soni' }``` |
 
+----------------------------------------
 
-const isAbsoluteURLResult = isAbsoluteURL('https://google.com');
-console.log("isAbsoluteURL ", isAbsoluteURLResult);   //  true
+<br />
 
+<span style="font-size: 1.5rem; font-weight: bold">HTML Utilities</span>
 
-const getURLParametersResult = getURLParameters('https://url.com/page?name=Punit&surname=Soni');
-console.log("getURLParameters ", getURLParametersResult);    //  { name: 'Punit', surname: 'Soni' }
-
-
-const containsElementResult = containsElement(
-    document.querySelector('head'),
-    document.querySelector('title')
-);
-console.log("containsElement ", containsElementResult);    //  true
-
+```js
+import { containsElement, getAncestors, smoothScroll, onClickOutside, getSelectedText } from 'js-ts-utilities';
 ```
-</details>
+
+| Method | Example | Output |
+| ----- | ----- | ----- |
+| ```containsElement``` | ```containsElement(document.querySelector('head'), document.querySelector('title'));``` | ```true``` |
+| ```getAncestors``` | ```getAncestors(document.querySelector('body'));``` | ```[document, html, body]``` |
+| ```smoothScroll``` | ```smoothScroll('#fooBar');``` | ```scrolls smoothly to the element with the id fooBar``` |
+| ```onClickOutside``` | ```onClickOutside('#my-element', () => console.log('Hello'));``` | ```Will log 'Hello' whenever the user clicks outside of #my-element``` |
+| ```getSelectedText``` | ```getSelectedText()``` | ```'Lorem ipsum'``` |
+| ```fullscreen``` | ```fullscreen()```<br />```fullscreen(false)``` | ```> fullscreen() - Opens `body` in fullscreen mode```<br />```> fullscreen(false) - Exit from fullscreen mode``` |
+
+
+<br />
+
+<span style="font-size: 1.5rem; font-weight: bold">Common Utilities</span>
+
+```js
+import { generateUUID } from 'js-ts-utilities';
+```
+
+| Method | Example | Output |
+| ----- | ----- | ----- |
+| ```generateUUID``` | ```generateUUID();``` | ```7982fcfe-5721-4632-bede-6000885be57d``` |
+
+
+<br />
+
+<span style="font-size: 1.5rem; font-weight: bold">Date Utilities</span>
+
+```js
+import { isDateValid } from 'js-ts-utilities';
+```
+
+| Method | Example | Output |
+| ----- | ----- | ----- |
+| ```isDateValid``` | ```isDateValid('December 17, 1995 03:24:00');``` | ```true``` |
+
+
+----------------------------------------
 
 
 
