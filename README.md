@@ -26,11 +26,9 @@ With npm:
 npm install --save js-ts-utilities
 ```
 
-<br />
-
 ----------------------------------------
 
-<span style="font-size: 1.5rem; font-weight: bold">URL Utilities</span>
+## <b>URL Utilities<b>
 
 ```js
 import { getBaseURL, isAbsoluteURL, getURLParameters } from 'js-ts-utilities';
@@ -46,7 +44,7 @@ import { getBaseURL, isAbsoluteURL, getURLParameters } from 'js-ts-utilities';
 
 <br />
 
-<span style="font-size: 1.5rem; font-weight: bold">HTML Utilities</span>
+## <b>HTML Utilities</b>
 
 ```js
 import { containsElement, getAncestors, smoothScroll, onClickOutside, getSelectedText } from 'js-ts-utilities';
@@ -64,7 +62,7 @@ import { containsElement, getAncestors, smoothScroll, onClickOutside, getSelecte
 
 <br />
 
-<span style="font-size: 1.5rem; font-weight: bold">Common Utilities</span>
+## <b>Common Utilities</b>
 
 ```js
 import { generateUUID } from 'js-ts-utilities';
@@ -77,7 +75,7 @@ import { generateUUID } from 'js-ts-utilities';
 
 <br />
 
-<span style="font-size: 1.5rem; font-weight: bold">Date Utilities</span>
+## <b>Date Utilities</b>
 
 ```js
 import { isDateValid } from 'js-ts-utilities';
@@ -86,9 +84,10 @@ import { isDateValid } from 'js-ts-utilities';
 | Method | Example | Output |
 | ----- | ----- | ----- |
 | ```isDateValid``` | ```isDateValid('December 17, 1995 03:24:00');``` | ```true``` |
+| ```getTimestamp``` | ```getTimestamp();``` | ```1602162242``` |
 
 
-----------------------------------------
+
 
 
 
