@@ -1,6 +1,6 @@
 {
   "name": "js-ts-utilities",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "JavaScript / TypeScript Utilities",
   "author": "Punit Soni <punit.soni33@gmail.com> (https://punit-soni.web.app)",
   "license": "MIT",
@@ -15,8 +15,7 @@
   "module": "dist/js-ts-utilities.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "keywords": [
     "javascript",
